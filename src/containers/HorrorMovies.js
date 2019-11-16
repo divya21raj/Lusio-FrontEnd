@@ -21,7 +21,7 @@ class HorrorMovies extends Component {
     }
     return (
       <>
-        <h1 className="movieShowcase__heading">Horror Movies</h1>
+        <h1 className="movieShowcase__heading">Horror Games</h1>
         <div className="movieShowcase__container">
           {movies}
         </div>

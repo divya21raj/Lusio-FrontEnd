@@ -1,7 +1,7 @@
 .header {
    background-color: $color-background;
    grid-column: 1 / 13;
-   height: 65rem;
+   height: 56rem;
    display: inline-block;
 
    @include responsive(phone) {

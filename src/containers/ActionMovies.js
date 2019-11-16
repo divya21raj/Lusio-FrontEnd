@@ -21,7 +21,7 @@ class ActionMovies extends Component {
     }
     return (
       <>
-        <h1 className="movieShowcase__heading">Action Movies</h1>
+        <h1 className="movieShowcase__heading">Action Games</h1>
         <div className="movieShowcase__container">
           {movies}
         </div>

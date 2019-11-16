@@ -21,7 +21,7 @@ class LusioOriginals extends Component {
     }
     return (
       <>
-        <h1 className="movieShowcase__heading">LUSIO ORIGINALS</h1>
+        <h1 className="movieShowcase__heading">RECOMMENDED</h1>
         <div className="movieShowcase__container">
           {movies}
         </div>
