@@ -17,7 +17,7 @@ class TopRated extends Component {
     // from the API through redux 
     if (this.props.topRated.data) {
       const url = "/movie/top_rated?api_key=224ce27b38a3805ecf6f6c36eb3ba9d0&language=en-US";
-      movies = getMovieRows(this.props.topRated.data, url);
+      movies = getMovieRows(this.props.topRated.data.reverse(), url);
     }
     return (
       <>

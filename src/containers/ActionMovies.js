@@ -17,7 +17,7 @@ class ActionMovies extends Component {
     // from the API through redux 
     if (this.props.actionMovies.data) {
       const url = "/discover/movie?api_key=224ce27b38a3805ecf6f6c36eb3ba9d0&with_genres=28";
-      movies = getMovieRows(this.props.actionMovies.data, url);
+      movies = getMovieRows(shuffle(this.props.actionMovies.data), url);
     }
     return (
       <>
@@ -29,6 +29,19 @@ class ActionMovies extends Component {
     )
   }
 }
+
+/**
+ * Shuffles array in place. ES6 version
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 
 const mapStateToProps = (state) => {
   return { actionMovies: state.action }

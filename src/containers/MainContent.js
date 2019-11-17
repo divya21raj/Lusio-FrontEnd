@@ -29,7 +29,7 @@ class MainContent extends Component {
     /** Movie Id for the Narcos series  */
     const movieId = 63351;
     /** Make Api call to retrieve the details for a single movie  */
-    const url = `https://4a763f1a.ngrok.io/game/?game_id=T024`;
+    const url = `https://069b803d.ngrok.io/game/?game_id=T024`;
     axios
       .get(url)
       .then(res => {
@@ -51,7 +51,7 @@ class MainContent extends Component {
           <TrendingMovies />
           <TopRated />
           <ActionMovies />
-          <ComedyMovies />
+          <RomanceMovies />
           {/* <HorrorMovies /> */}
           <Documentaries />
         </div>

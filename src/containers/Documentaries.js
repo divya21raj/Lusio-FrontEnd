@@ -11,17 +11,19 @@ class Documentaries extends Component {
     this.props.fetchDocumentaries();
   }
 
+  
+
   render() {
     let movies
     // Call getMoviesRows function only when we get the data back 
     // from the API through redux 
     if (this.props.movies.data) {
       const url = '/discover/tv?api_key=224ce27b38a3805ecf6f6c36eb3ba9d0&with_genres=99';
-      movies = getMovieRows(this.props.movies.data, url);
+      movies = getMovieRows(shuffle(this.props.movies.data), url);
     }
     return (
       <>
-        <h1 className="movieShowcase__heading">Documentaries</h1>
+        <h1 className="movieShowcase__heading">Misc</h1>
         <div className="movieShowcase__container">
           {movies}
         </div>
@@ -30,6 +32,17 @@ class Documentaries extends Component {
   }
 }
 
+/**
+ * Shuffles array in place. ES6 version
+ * @param {Array} a items An array containing the items.
+ */
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 const mapStateToProps = (state) => {
   return { movies: state.documentary }
