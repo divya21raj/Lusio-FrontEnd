@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom"; 
+
 import NavigationItem from '../components/NavigationItem'
 import SearchLogo from '../static/images/search-icon.svg';
 import LusioLogo from '../static/images/Lusio_Logo_RGB.png';
@@ -40,7 +42,7 @@ class navigation extends Component {
         <ul className="navigation__container">
           <NavigationItem link="/" exact><img className="navigation__container--logo" src={LusioLogo} alt="" /></NavigationItem>
           <DropdownArrow className="navigation__container--downArrow-2"></DropdownArrow>
-          <div className="navigation__container-link pseudo-link">Home</div>
+          <Link to="/" className="navigation__container-link pseudo-link">Home</Link>
           <div className="navigation__container-link pseudo-link">Recommended</div>
           <div className="navigation__container-link pseudo-link">Popular</div>
           <div className="navigation__container-link pseudo-link">Recently Added</div>
