@@ -41,8 +41,8 @@ class navigation extends Component {
           <NavigationItem link="/" exact><img className="navigation__container--logo" src={LusioLogo} alt="" /></NavigationItem>
           <DropdownArrow className="navigation__container--downArrow-2"></DropdownArrow>
           <div className="navigation__container-link pseudo-link">Home</div>
-          <div className="navigation__container-link pseudo-link">TV Shows</div>
-          <div className="navigation__container-link pseudo-link">Movies</div>
+          <div className="navigation__container-link pseudo-link">Recommended</div>
+          <div className="navigation__container-link pseudo-link">Popular</div>
           <div className="navigation__container-link pseudo-link">Recently Added</div>
           <div className="navigation__container-link pseudo-link">My List</div>
 
@@ -58,8 +58,8 @@ class navigation extends Component {
 
           </div>
 
-          <div className="navigation__container-link pseudo-link">KIDS</div>
-          <div className="navigation__container-link pseudo-link">DVD</div>
+          <div className="navigation__container-link pseudo-link">Roms</div>
+          <div className="navigation__container-link pseudo-link">About</div>
           <BellLogo className="navigation__container--bellLogo" />
 
           <DropdownContent />
