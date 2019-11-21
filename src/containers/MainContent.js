@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import axios from '../axios-movies';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
@@ -29,7 +29,7 @@ class MainContent extends Component {
     /** Movie Id for the Narcos series  */
     const movieId = 63351;
     /** Make Api call to retrieve the details for a single movie  */
-    const url = `https://069b803d.ngrok.io/game/?game_id=T024`;
+    const url = `/game/?game_id=T024`;
     axios
       .get(url)
       .then(res => {

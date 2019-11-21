@@ -8,15 +8,15 @@ const dropdownContent = () => (
       <div className="dropdownContent">
         <div>
           <div className="dropdownContent--user"></div>
-          <p className="dropdownContent--user-text">Andres</p>
+          <p className="dropdownContent--user-text">Hariharan</p>
         </div>
         <div>
           <div className="dropdownContent--user dropdownContent--user-2"></div>
-          <p className="dropdownContent--user-text">Tony</p>
+          <p className="dropdownContent--user-text">Rohan</p>
         </div>
         <div>
           <div className="dropdownContent--user dropdownContent--user-3"></div>
-          <p className="dropdownContent--user-text">Luis</p>
+          <p className="dropdownContent--user-text">Divya Raj</p>
         </div>
         <p className="dropdownContent-text">Manage Profiles</p>
 
