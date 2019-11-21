@@ -6,6 +6,7 @@ import PlayIcon from '../static/images/play-button.svg';
 import React from 'react'
 
 export default function ModalMovieDetails(props) {
+  var url = "http://localhost:8082/?game=" + props.movie.title; 
   return (
     <Aux>
       <div className="modal__container">
@@ -23,10 +24,12 @@ export default function ModalMovieDetails(props) {
           {props.movie.number_of_seasons ? " Seasons: " + props.movie.number_of_seasons : ""}
         </p> */}
         <p className="modal__overview">{props.movie.developer}</p>
-        <button className="modal__btn modal__btn--red">
-          <PlayIcon className="modal__btn--icon" />
-          Play
-        </button>
+        <a href = {url}>
+          <button className="modal__btn modal__btn--red">
+            <PlayIcon className="modal__btn--icon" />
+            Play
+          </button>
+        </a>
         <button className="modal__btn">
           <AddIcon className="modal__btn--icon" />
           My List
